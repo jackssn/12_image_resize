@@ -21,6 +21,7 @@
 PATH_TO_IMAGE - обязательный параметр.
 
 optional arguments:
+
 1. `--width WIDTH`
 2. `--height HEIGHT`
 3. `--scale SCALE`
