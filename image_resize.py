@@ -72,7 +72,7 @@ def print_scale_warning():
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(prog='PROG')
-    parser.add_argument("path", help="The path to image you want to resize.", type=str)
+    parser.add_argument("path_to_image", help="The path to image you want to resize.", type=str)
 
     group = parser.add_argument_group()
     group.add_argument("--width", help="Weight to resize image.", type=int)
@@ -85,7 +85,7 @@ if __name__ == '__main__':
         raise argparse.ArgumentError(scale_arg, "You can't set scale and width/height at the same time.")
     else:
         resize_image(
-            path_to_original=args.path,
+            path_to_original=args.path_to_image,
             path_to_result=args.path_to_save,
             width=args.width,
             height=args.height,
